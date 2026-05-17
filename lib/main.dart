@@ -12,8 +12,8 @@ class WebApp extends StatefulWidget {
 
 class _WebAppState extends State<WebApp> {
   late InAppWebViewController webViewController;
-   final String homeUrl = 'https://www.receiptvault.com/';
-  final String logoutUrl = 'https://www.receiptvault.com/logout';
+   final String homeUrl = 'https://www.receiptvault.co/';
+  final String logoutUrl = 'https://www.receiptvault.co/logout';
   bool isLoading = true;
   final String googleAuthRedirectUrl =
       "https://accounts.google.com/o/oauth2/v2/auth/";
@@ -84,7 +84,7 @@ class _WebAppState extends State<WebApp> {
                 return NavigationActionPolicy.ALLOW;
               },
             ),
-            if (isLoading) Center(child: Lottie.asset("assets/animation.json")),
+            // if (isLoading) Center(child: Lottie.asset("assets/animation.json")),
           ],
         ),
       ),
